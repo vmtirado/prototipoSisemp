@@ -1,0 +1,103 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.prototipo.controller.CreateOrder" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.commons.layout">
+    <Page showHeader="false" title="Page Title" showFooter="false" showNavButton="false" enableScrolling="false">
+        <content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="0px" top="1px">
+                        <layout:control>
+                            <Image src="/webapp/resources/PO_Create_1_.jpg" height="1318.79990189px" width="1237.96000000px" visible="true" densityAware="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="287px" top="534px">
+                        <layout:control>
+                            <ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%" items="{path:'/Supplier2Set', templateShareable:true}">
+                                <items>
+                                    <core:Item text="{Name}" enabled="true" key="{Name}"/>
+                                </items>
+                            </ComboBox>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="295px" top="1060px">
+                        <layout:control>
+                            <ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%" items="{path:'/Product2Set', templateShareable:true}">
+                                <items>
+                                    <core:Item text="{Name}" enabled="true" key="{Name}"/>
+                                </items>
+                            </ComboBox>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="297px" top="1190px">
+                        <layout:control>
+                            <ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%" items="{path:'/Product2Set', templateShareable:true}">
+                                <items>
+                                    <core:Item text="{Name}" enabled="true" key="{Name}"/>
+                                </items>
+                            </ComboBox>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="294px" top="1124px">
+                        <layout:control>
+                            <ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%" items="{path:'/Product2Set', templateShareable:true}">
+                                <items>
+                                    <core:Item text="{Name}" enabled="true" key="{Name}"/>
+                                </items>
+                            </ComboBox>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="943px" top="530px">
+                        <layout:control>
+                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="286px" top="808px">
+                        <layout:control>
+                            <Input type="Number" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="961px" top="1120px">
+                        <layout:control>
+                            <Input type="Number" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="963px" top="1176px">
+                        <layout:control>
+                            <Input type="Number" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="959px" top="1066px">
+                        <layout:control>
+                            <Input type="Number" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="939px" top="744px">
+                        <layout:control>
+                            <DatePicker width="auto" displayFormat="medium" required="false" valueStateText="Invalid entry" enabled="true" visible="true" valueFormat="yyyyMMdd"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="941px" top="838px">
+                        <layout:control>
+                            <DatePicker width="auto" displayFormat="medium" required="false" valueStateText="Invalid entry" enabled="true" visible="true" valueFormat="yyyyMMdd"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="1160px" top="7px">
+                        <layout:control>
+                            <Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+                <content>
+                    <ToolbarSpacer width=""/>
+                    <Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

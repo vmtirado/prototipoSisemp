@@ -1,0 +1,129 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.prototipo.controller.OrderList3" xmlns:f="sap.f" xmlns:variants="sap.ui.comp.variants" xmlns="sap.m" xmlns:filterbar="sap.ui.comp.filterbar">
+    <f:DynamicPage headerExpanded="true" showFooter="true" class="sapUiSizeCompact">
+        <f:title>
+            <f:DynamicPageTitle>
+                <f:heading>
+                    <variants:VariantManagement/>
+                </f:heading>
+                <f:actions>
+                    <ToolbarSpacer/>
+                    <Button icon="sap-icon://action" type="Transparent"/>
+                </f:actions>
+            </f:DynamicPageTitle>
+        </f:title>
+        <f:header>
+            <f:DynamicPageHeader pinnable="true">
+                <f:content>
+                    <filterbar:FilterBar id="ListReportFilterBar" useToolbar="false" showGoOnFB="true" searchEnabled="true">
+                        <filterbar:filterItems>
+                            <filterbar:FilterItem label="Filter 1" name="Fiori_ListReport_ListReport_0-filterBars-Fiori_ListReport_FilterBar-1-filters-Fiori_ListReport_StandardFilter-1-s7wy1q1u8141a1li0tiq04a613_S13-qnfb1njw6s35spgdz36uqysb15_S15---0">
+                                <filterbar:control>
+                                    <MultiInput/>
+                                </filterbar:control>
+                            </filterbar:FilterItem>
+                        </filterbar:filterItems>
+                    </filterbar:FilterBar>
+                </f:content>
+            </f:DynamicPageHeader>
+        </f:header>
+        <f:content>
+            <VBox fitContainer="true">
+                <items>
+                    <Table width="100%" growing="true" growingScrollToLoad="true" growingThreshold="25" mode="SingleSelectLeft" itemPress="_onFioriListReportTableItemPress" updateFinished="_onFioriListReportTableUpdateFinished" items="{path:'/SalesOrder3Set', templateShareable:true, parameters:{expand:'Supplier3'}}">
+                        <headerToolbar>
+                            <OverflowToolbar design="Transparent">
+                                <content>
+                                    <Title textAlign="Begin" text="Orders"/>
+                                    <Title text="(1)"/>
+                                    <ToolbarSpacer/>
+                                    <Button text="Cancel" iconFirst="false" type="Reject" enabled="true" press="_onFioriListReportActionButtonPress">
+                                        <layoutData>
+                                            <OverflowToolbarLayoutData moveToOverflow="true"/>
+                                        </layoutData>
+                                    </Button>
+                                    <Button text="Home" iconFirst="false" type="Transparent" enabled="true" press="_onFioriListReportActionButtonPress1">
+                                        <layoutData>
+                                            <OverflowToolbarLayoutData moveToOverflow="true"/>
+                                        </layoutData>
+                                    </Button>
+                                    <Button text="Add" iconFirst="false" type="Emphasized" enabled="true" press="_onFioriListReportActionButtonPress2">
+                                        <layoutData>
+                                            <OverflowToolbarLayoutData moveToOverflow="true"/>
+                                        </layoutData>
+                                    </Button>
+                                    <Button icon="sap-icon://action-settings" type="Transparent">
+                                        <layoutData>
+                                            <OverflowToolbarLayoutData moveToOverflow="true"/>
+                                        </layoutData>
+                                    </Button>
+                                </content>
+                            </OverflowToolbar>
+                        </headerToolbar>
+                        <columns>
+                            <Column width="auto" minScreenWidth="Phone">
+                                <header>
+                                    <Text text="ID" width="auto"/>
+                                </header>
+                            </Column>
+                            <Column width="auto" hAlign="Left" vAlign="Middle" popinDisplay="Inline" mergeDuplicates="false" demandPopin="true" minScreenWidth="Tablet">
+                                <header>
+                                    <Text text="Purchase Date"/>
+                                </header>
+                            </Column>
+                            <Column width="auto" hAlign="Left" vAlign="Middle" popinDisplay="Inline" mergeDuplicates="false" demandPopin="true" minScreenWidth="Tablet">
+                                <header>
+                                    <Text text="Delivery Date"/>
+                                </header>
+                            </Column>
+                            <Column width="auto" hAlign="Right" minScreenWidth="Phone">
+                                <header>
+                                    <Text text="Total Price" width="auto"/>
+                                </header>
+                            </Column>
+                            <Column width="auto" minScreenWidth="Tablet" demandPopin="true">
+                                <header>
+                                    <Text text="Shipping Method" width="auto"/>
+                                </header>
+                            </Column>
+                            <Column width="auto" minScreenWidth="Tablet" demandPopin="true">
+                                <header>
+                                    <Text text="Payment Terms" width="auto"/>
+                                </header>
+                            </Column>
+                            <Column width="auto" minScreenWidth="Tablet" demandPopin="true">
+                                <header>
+                                    <Text text="Supplier" width="auto"/>
+                                </header>
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem type="Navigation">
+                                <cells>
+                                    <ObjectIdentifier title="{ID}" text=""/>
+                                    <Text text="{path: 'PurchaseDate', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                    <Text text="{path: 'DeliveryDate', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                    <HBox alignItems="Stretch" justifyContent="End" alignContent="Stretch">
+                                        <items>
+                                            <ObjectNumber number="{path:'TotalPrice', formatter:'.formatFractionDigitFromValue'}" unit="COP" emphasized="false"/>
+                                        </items>
+                                    </HBox>
+                                    <ObjectStatus text="{ShippingMethod}" width="auto"/>
+                                    <ObjectStatus text="{path: 'PaymentTerms', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" width="auto"/>
+                                    <ObjectStatus text="{Supplier3/Name}" width="auto"/>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </items>
+            </VBox>
+        </f:content>
+        <f:footer>
+            <OverflowToolbar design="auto">
+                <content>
+                    <ToolbarSpacer/>
+                    <Button text="Home" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                </content>
+            </OverflowToolbar>
+        </f:footer>
+    </f:DynamicPage>
+</mvc:View>

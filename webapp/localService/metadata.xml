@@ -1,0 +1,425 @@
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="1ba0ab511524c9fc15688698" xml:lang="en" sap:schema-version="0000" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityContainer Name="1ba0ab511524c9fc15688698_Entities" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="SalesOrderSet" EntityType="1ba0ab511524c9fc15688698.SalesOrder" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <AssociationSet Name="SalesOrderSalesOrderItemSalesOrderItem" Association="1ba0ab511524c9fc15688698.SalesOrderSalesOrderItemSalesOrderItem" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="SalesOrderSet" Role="FromRole_SalesOrderSalesOrderItemSalesOrderItem"/>
+                    <End EntitySet="SalesOrderItemSet" Role="ToRole_SalesOrderSalesOrderItemSalesOrderItem"/>
+                </AssociationSet>
+                <AssociationSet Name="SalesOrderSupplierSupplier" Association="1ba0ab511524c9fc15688698.SalesOrderSupplierSupplier" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="SalesOrderSet" Role="FromRole_SalesOrderSupplierSupplier"/>
+                    <End EntitySet="SupplierSet" Role="ToRole_SalesOrderSupplierSupplier"/>
+                </AssociationSet>
+                <EntitySet Name="ProductSet" EntityType="1ba0ab511524c9fc15688698.Product" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <AssociationSet Name="ProductSupplierSupplier" Association="1ba0ab511524c9fc15688698.ProductSupplierSupplier" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="ProductSet" Role="FromRole_ProductSupplierSupplier"/>
+                    <End EntitySet="SupplierSet" Role="ToRole_ProductSupplierSupplier"/>
+                </AssociationSet>
+                <AssociationSet Name="ProductSalesOrderItemSalesOrderItem" Association="1ba0ab511524c9fc15688698.ProductSalesOrderItemSalesOrderItem" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="ProductSet" Role="FromRole_ProductSalesOrderItemSalesOrderItem"/>
+                    <End EntitySet="SalesOrderItemSet" Role="ToRole_ProductSalesOrderItemSalesOrderItem"/>
+                </AssociationSet>
+                <EntitySet Name="SupplierSet" EntityType="1ba0ab511524c9fc15688698.Supplier" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="SalesOrderItemSet" EntityType="1ba0ab511524c9fc15688698.SalesOrderItem" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="ProveedorMontoSet" EntityType="1ba0ab511524c9fc15688698.ProveedorMonto" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="ProductoMontoSet" EntityType="1ba0ab511524c9fc15688698.ProductoMonto" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="SalesOrder2Set" EntityType="1ba0ab511524c9fc15688698.SalesOrder2" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <AssociationSet Name="SalesOrder2Supplier2Supplier2" Association="1ba0ab511524c9fc15688698.SalesOrder2Supplier2Supplier2" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="SalesOrder2Set" Role="FromRole_SalesOrder2Supplier2Supplier2"/>
+                    <End EntitySet="Supplier2Set" Role="ToRole_SalesOrder2Supplier2Supplier2"/>
+                </AssociationSet>
+                <AssociationSet Name="SalesOrder2SalesOrderItem2SalesOrderItem2" Association="1ba0ab511524c9fc15688698.SalesOrder2SalesOrderItem2SalesOrderItem2" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="SalesOrder2Set" Role="FromRole_SalesOrder2SalesOrderItem2SalesOrderItem2"/>
+                    <End EntitySet="SalesOrderItem2Set" Role="ToRole_SalesOrder2SalesOrderItem2SalesOrderItem2"/>
+                </AssociationSet>
+                <EntitySet Name="SalesOrderItem2Set" EntityType="1ba0ab511524c9fc15688698.SalesOrderItem2" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="Product2Set" EntityType="1ba0ab511524c9fc15688698.Product2" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <AssociationSet Name="Product2SalesOrderItem2SalesOrderItem2" Association="1ba0ab511524c9fc15688698.Product2SalesOrderItem2SalesOrderItem2" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="Product2Set" Role="FromRole_Product2SalesOrderItem2SalesOrderItem2"/>
+                    <End EntitySet="SalesOrderItem2Set" Role="ToRole_Product2SalesOrderItem2SalesOrderItem2"/>
+                </AssociationSet>
+                <AssociationSet Name="Product2Supplier2Supplier2" Association="1ba0ab511524c9fc15688698.Product2Supplier2Supplier2" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="Product2Set" Role="FromRole_Product2Supplier2Supplier2"/>
+                    <End EntitySet="Supplier2Set" Role="ToRole_Product2Supplier2Supplier2"/>
+                </AssociationSet>
+                <EntitySet Name="Supplier2Set" EntityType="1ba0ab511524c9fc15688698.Supplier2" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="SalesOrder3Set" EntityType="1ba0ab511524c9fc15688698.SalesOrder3" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <AssociationSet Name="SalesOrder3Supplier3Supplier3" Association="1ba0ab511524c9fc15688698.SalesOrder3Supplier3Supplier3" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="SalesOrder3Set" Role="FromRole_SalesOrder3Supplier3Supplier3"/>
+                    <End EntitySet="Supplier3Set" Role="ToRole_SalesOrder3Supplier3Supplier3"/>
+                </AssociationSet>
+                <AssociationSet Name="SalesOrder3SalesOrderItem3SalesOrderItem3" Association="1ba0ab511524c9fc15688698.SalesOrder3SalesOrderItem3SalesOrderItem3" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="SalesOrder3Set" Role="FromRole_SalesOrder3SalesOrderItem3SalesOrderItem3"/>
+                    <End EntitySet="SalesOrderItem3Set" Role="ToRole_SalesOrder3SalesOrderItem3SalesOrderItem3"/>
+                </AssociationSet>
+                <EntitySet Name="SalesOrderItem3Set" EntityType="1ba0ab511524c9fc15688698.SalesOrderItem3" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="Product3Set" EntityType="1ba0ab511524c9fc15688698.Product3" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <AssociationSet Name="Product3SalesOrderItem3SalesOrderItem3" Association="1ba0ab511524c9fc15688698.Product3SalesOrderItem3SalesOrderItem3" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="Product3Set" Role="FromRole_Product3SalesOrderItem3SalesOrderItem3"/>
+                    <End EntitySet="SalesOrderItem3Set" Role="ToRole_Product3SalesOrderItem3SalesOrderItem3"/>
+                </AssociationSet>
+                <AssociationSet Name="Product3Supplier3Supplier3" Association="1ba0ab511524c9fc15688698.Product3Supplier3Supplier3" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="Product3Set" Role="FromRole_Product3Supplier3Supplier3"/>
+                    <End EntitySet="Supplier3Set" Role="ToRole_Product3Supplier3Supplier3"/>
+                </AssociationSet>
+                <EntitySet Name="Supplier3Set" EntityType="1ba0ab511524c9fc15688698.Supplier3" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="SalesOrderItemGraphSet" EntityType="1ba0ab511524c9fc15688698.SalesOrderItemGraph" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="OrdenesMontoFechaSet" EntityType="1ba0ab511524c9fc15688698.OrdenesMontoFecha" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="ProveedorMonto2Set" EntityType="1ba0ab511524c9fc15688698.ProveedorMonto2" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="ProductoMonto2Set" EntityType="1ba0ab511524c9fc15688698.ProductoMonto2" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+            </EntityContainer>
+            <EntityType Name="SalesOrder">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="TotalPrice" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="TotalPrice"/>
+                <Property Name="Currency" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Currency"/>
+                <Property Name="PurchaseDate" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date" sap:label="PurchaseDate"/>
+                <Property Name="DeliveryDate" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date" sap:label="DeliveryDate"/>
+                <Property Name="ShippingMethod" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShippingMethod"/>
+                <Property Name="PaymentTerms" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="PaymentTerms"/>
+                <Property Name="___FK_bb9aea8065be7c8c15731dac_00029" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_bb9aea8065be7c8c15731dac_00029"/>
+                <Property Name="DefaultName" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="DefaultName"/>
+                <NavigationProperty Name="SalesOrderItem" Relationship="1ba0ab511524c9fc15688698.SalesOrderSalesOrderItemSalesOrderItem" FromRole="FromRole_SalesOrderSalesOrderItemSalesOrderItem" ToRole="ToRole_SalesOrderSalesOrderItemSalesOrderItem"/>
+                <NavigationProperty Name="Supplier" Relationship="1ba0ab511524c9fc15688698.SalesOrderSupplierSupplier" FromRole="FromRole_SalesOrderSupplierSupplier" ToRole="ToRole_SalesOrderSupplierSupplier"/>
+            </EntityType>
+            <Association Name="SalesOrderSalesOrderItemSalesOrderItem">
+                <End Type="1ba0ab511524c9fc15688698.SalesOrder" Multiplicity="1" Role="FromRole_SalesOrderSalesOrderItemSalesOrderItem"/>
+                <End Type="1ba0ab511524c9fc15688698.SalesOrderItem" Multiplicity="*" Role="ToRole_SalesOrderSalesOrderItemSalesOrderItem"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_SalesOrderSalesOrderItemSalesOrderItem">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_SalesOrderSalesOrderItemSalesOrderItem">
+                        <PropertyRef Name="___FK_bb9aea8065be7c8c15731dac_00027"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="SalesOrderSupplierSupplier">
+                <End Type="1ba0ab511524c9fc15688698.SalesOrder" Multiplicity="1" Role="FromRole_SalesOrderSupplierSupplier"/>
+                <End Type="1ba0ab511524c9fc15688698.Supplier" Multiplicity="1" Role="ToRole_SalesOrderSupplierSupplier"/>
+                <ReferentialConstraint>
+                    <Principal Role="ToRole_SalesOrderSupplierSupplier">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="FromRole_SalesOrderSupplierSupplier">
+                        <PropertyRef Name="___FK_bb9aea8065be7c8c15731dac_00029"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityType Name="Product">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Name" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Name"/>
+                <Property Name="Price" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Price"/>
+                <Property Name="Currency" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Currency"/>
+                <Property Name="___FK_bb9aea8065be7c8c15731dac_00031" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_bb9aea8065be7c8c15731dac_00031"/>
+                <NavigationProperty Name="Supplier" Relationship="1ba0ab511524c9fc15688698.ProductSupplierSupplier" FromRole="FromRole_ProductSupplierSupplier" ToRole="ToRole_ProductSupplierSupplier"/>
+                <NavigationProperty Name="SalesOrderItem" Relationship="1ba0ab511524c9fc15688698.ProductSalesOrderItemSalesOrderItem" FromRole="FromRole_ProductSalesOrderItemSalesOrderItem" ToRole="ToRole_ProductSalesOrderItemSalesOrderItem"/>
+            </EntityType>
+            <Association Name="ProductSupplierSupplier">
+                <End Type="1ba0ab511524c9fc15688698.Product" Multiplicity="1" Role="FromRole_ProductSupplierSupplier"/>
+                <End Type="1ba0ab511524c9fc15688698.Supplier" Multiplicity="1" Role="ToRole_ProductSupplierSupplier"/>
+                <ReferentialConstraint>
+                    <Principal Role="ToRole_ProductSupplierSupplier">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="FromRole_ProductSupplierSupplier">
+                        <PropertyRef Name="___FK_bb9aea8065be7c8c15731dac_00031"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="ProductSalesOrderItemSalesOrderItem">
+                <End Type="1ba0ab511524c9fc15688698.Product" Multiplicity="1" Role="FromRole_ProductSalesOrderItemSalesOrderItem"/>
+                <End Type="1ba0ab511524c9fc15688698.SalesOrderItem" Multiplicity="*" Role="ToRole_ProductSalesOrderItemSalesOrderItem"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_ProductSalesOrderItemSalesOrderItem">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_ProductSalesOrderItemSalesOrderItem">
+                        <PropertyRef Name="___FK_bb9aea8065be7c8c15731dac_00033"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityType Name="Supplier">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Name" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Name"/>
+                <Property Name="Email" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Email"/>
+                <Property Name="Phone" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Phone"/>
+                <Property Name="City" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="City"/>
+            </EntityType>
+            <EntityType Name="SalesOrderItem">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Quantity" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Quantity"/>
+                <Property Name="ProductName" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ProductName"/>
+                <Property Name="ProductPrice" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ProductPrice"/>
+                <Property Name="TotalPrice" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="TotalPrice"/>
+                <Property Name="Currency" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Currency"/>
+                <Property Name="___FK_bb9aea8065be7c8c15731dac_00027" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_bb9aea8065be7c8c15731dac_00027"/>
+                <Property Name="___FK_bb9aea8065be7c8c15731dac_00033" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_bb9aea8065be7c8c15731dac_00033"/>
+            </EntityType>
+            <EntityType Name="ProveedorMonto">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Proveedor" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Proveedor"/>
+                <Property Name="Monto" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Monto"/>
+                <Property Name="Fecha" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date" sap:label="Fecha"/>
+            </EntityType>
+            <EntityType Name="ProductoMonto">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Producto" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Producto"/>
+                <Property Name="Monto" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Monto"/>
+                <Property Name="Fecha" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date" sap:label="Fecha"/>
+            </EntityType>
+            <EntityType Name="SalesOrder2">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="TotalPrice" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="TotalPrice"/>
+                <Property Name="Currency" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Currency"/>
+                <Property Name="PurchaseDate" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date" sap:label="PurchaseDate"/>
+                <Property Name="DeliveryDate" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date" sap:label="DeliveryDate"/>
+                <Property Name="ShippingMethod" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShippingMethod"/>
+                <Property Name="PaymentTerms" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="PaymentTerms"/>
+                <Property Name="___FK_de16e3225fb46aa615799d0b_00027" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_de16e3225fb46aa615799d0b_00027"/>
+                <NavigationProperty Name="Supplier2" Relationship="1ba0ab511524c9fc15688698.SalesOrder2Supplier2Supplier2" FromRole="FromRole_SalesOrder2Supplier2Supplier2" ToRole="ToRole_SalesOrder2Supplier2Supplier2"/>
+                <NavigationProperty Name="SalesOrderItem2" Relationship="1ba0ab511524c9fc15688698.SalesOrder2SalesOrderItem2SalesOrderItem2" FromRole="FromRole_SalesOrder2SalesOrderItem2SalesOrderItem2" ToRole="ToRole_SalesOrder2SalesOrderItem2SalesOrderItem2"/>
+            </EntityType>
+            <Association Name="SalesOrder2Supplier2Supplier2">
+                <End Type="1ba0ab511524c9fc15688698.SalesOrder2" Multiplicity="1" Role="FromRole_SalesOrder2Supplier2Supplier2"/>
+                <End Type="1ba0ab511524c9fc15688698.Supplier2" Multiplicity="1" Role="ToRole_SalesOrder2Supplier2Supplier2"/>
+                <ReferentialConstraint>
+                    <Principal Role="ToRole_SalesOrder2Supplier2Supplier2">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="FromRole_SalesOrder2Supplier2Supplier2">
+                        <PropertyRef Name="___FK_de16e3225fb46aa615799d0b_00027"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="SalesOrder2SalesOrderItem2SalesOrderItem2">
+                <End Type="1ba0ab511524c9fc15688698.SalesOrder2" Multiplicity="1" Role="FromRole_SalesOrder2SalesOrderItem2SalesOrderItem2"/>
+                <End Type="1ba0ab511524c9fc15688698.SalesOrderItem2" Multiplicity="*" Role="ToRole_SalesOrder2SalesOrderItem2SalesOrderItem2"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_SalesOrder2SalesOrderItem2SalesOrderItem2">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_SalesOrder2SalesOrderItem2SalesOrderItem2">
+                        <PropertyRef Name="___FK_de16e3225fb46aa615799d0b_00029"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityType Name="SalesOrderItem2">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Quantity" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Quantity"/>
+                <Property Name="ProductName" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ProductName"/>
+                <Property Name="ProductPrice" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ProductPrice"/>
+                <Property Name="TotalPrice" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="TotalPrice"/>
+                <Property Name="Currency" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Currency"/>
+                <Property Name="___FK_de16e3225fb46aa615799d0b_00029" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_de16e3225fb46aa615799d0b_00029"/>
+                <Property Name="___FK_de16e3225fb46aa615799d0b_00031" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_de16e3225fb46aa615799d0b_00031"/>
+            </EntityType>
+            <EntityType Name="Product2">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Name" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Name"/>
+                <Property Name="Price" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Price"/>
+                <Property Name="Currency" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Currency"/>
+                <Property Name="___FK_de16e3225fb46aa615799d0b_00033" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_de16e3225fb46aa615799d0b_00033"/>
+                <NavigationProperty Name="SalesOrderItem2" Relationship="1ba0ab511524c9fc15688698.Product2SalesOrderItem2SalesOrderItem2" FromRole="FromRole_Product2SalesOrderItem2SalesOrderItem2" ToRole="ToRole_Product2SalesOrderItem2SalesOrderItem2"/>
+                <NavigationProperty Name="Supplier2" Relationship="1ba0ab511524c9fc15688698.Product2Supplier2Supplier2" FromRole="FromRole_Product2Supplier2Supplier2" ToRole="ToRole_Product2Supplier2Supplier2"/>
+            </EntityType>
+            <Association Name="Product2SalesOrderItem2SalesOrderItem2">
+                <End Type="1ba0ab511524c9fc15688698.Product2" Multiplicity="1" Role="FromRole_Product2SalesOrderItem2SalesOrderItem2"/>
+                <End Type="1ba0ab511524c9fc15688698.SalesOrderItem2" Multiplicity="*" Role="ToRole_Product2SalesOrderItem2SalesOrderItem2"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_Product2SalesOrderItem2SalesOrderItem2">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_Product2SalesOrderItem2SalesOrderItem2">
+                        <PropertyRef Name="___FK_de16e3225fb46aa615799d0b_00031"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="Product2Supplier2Supplier2">
+                <End Type="1ba0ab511524c9fc15688698.Product2" Multiplicity="1" Role="FromRole_Product2Supplier2Supplier2"/>
+                <End Type="1ba0ab511524c9fc15688698.Supplier2" Multiplicity="1" Role="ToRole_Product2Supplier2Supplier2"/>
+                <ReferentialConstraint>
+                    <Principal Role="ToRole_Product2Supplier2Supplier2">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="FromRole_Product2Supplier2Supplier2">
+                        <PropertyRef Name="___FK_de16e3225fb46aa615799d0b_00033"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityType Name="Supplier2">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Name" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Name"/>
+                <Property Name="Email" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Email"/>
+                <Property Name="Phone" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Phone"/>
+                <Property Name="City" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="City"/>
+            </EntityType>
+            <EntityType Name="SalesOrder3">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="TotalPrice" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="TotalPrice"/>
+                <Property Name="Currency" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Currency"/>
+                <Property Name="PurchaseDate" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date" sap:label="PurchaseDate"/>
+                <Property Name="DeliveryDate" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date" sap:label="DeliveryDate"/>
+                <Property Name="ShippingMethod" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShippingMethod"/>
+                <Property Name="PaymentTerms" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="PaymentTerms"/>
+                <Property Name="___FK_5cae7f76498f3b301579c2bf_00027" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_5cae7f76498f3b301579c2bf_00027"/>
+                <NavigationProperty Name="Supplier3" Relationship="1ba0ab511524c9fc15688698.SalesOrder3Supplier3Supplier3" FromRole="FromRole_SalesOrder3Supplier3Supplier3" ToRole="ToRole_SalesOrder3Supplier3Supplier3"/>
+                <NavigationProperty Name="SalesOrderItem3" Relationship="1ba0ab511524c9fc15688698.SalesOrder3SalesOrderItem3SalesOrderItem3" FromRole="FromRole_SalesOrder3SalesOrderItem3SalesOrderItem3" ToRole="ToRole_SalesOrder3SalesOrderItem3SalesOrderItem3"/>
+            </EntityType>
+            <Association Name="SalesOrder3Supplier3Supplier3">
+                <End Type="1ba0ab511524c9fc15688698.SalesOrder3" Multiplicity="1" Role="FromRole_SalesOrder3Supplier3Supplier3"/>
+                <End Type="1ba0ab511524c9fc15688698.Supplier3" Multiplicity="1" Role="ToRole_SalesOrder3Supplier3Supplier3"/>
+                <ReferentialConstraint>
+                    <Principal Role="ToRole_SalesOrder3Supplier3Supplier3">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="FromRole_SalesOrder3Supplier3Supplier3">
+                        <PropertyRef Name="___FK_5cae7f76498f3b301579c2bf_00027"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="SalesOrder3SalesOrderItem3SalesOrderItem3">
+                <End Type="1ba0ab511524c9fc15688698.SalesOrder3" Multiplicity="1" Role="FromRole_SalesOrder3SalesOrderItem3SalesOrderItem3"/>
+                <End Type="1ba0ab511524c9fc15688698.SalesOrderItem3" Multiplicity="*" Role="ToRole_SalesOrder3SalesOrderItem3SalesOrderItem3"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_SalesOrder3SalesOrderItem3SalesOrderItem3">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_SalesOrder3SalesOrderItem3SalesOrderItem3">
+                        <PropertyRef Name="___FK_5cae7f76498f3b301579c2bf_00029"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityType Name="SalesOrderItem3">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Quantity" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Quantity"/>
+                <Property Name="ProductName" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ProductName"/>
+                <Property Name="ProductPrice" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ProductPrice"/>
+                <Property Name="TotalPrice" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="TotalPrice"/>
+                <Property Name="Currency" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Currency"/>
+                <Property Name="___FK_5cae7f76498f3b301579c2bf_00029" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_5cae7f76498f3b301579c2bf_00029"/>
+                <Property Name="___FK_5cae7f76498f3b301579c2bf_00031" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_5cae7f76498f3b301579c2bf_00031"/>
+            </EntityType>
+            <EntityType Name="Product3">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Name" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Name"/>
+                <Property Name="Price" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Price"/>
+                <Property Name="Currency" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Currency"/>
+                <Property Name="___FK_5cae7f76498f3b301579c2bf_00033" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_5cae7f76498f3b301579c2bf_00033"/>
+                <NavigationProperty Name="SalesOrderItem3" Relationship="1ba0ab511524c9fc15688698.Product3SalesOrderItem3SalesOrderItem3" FromRole="FromRole_Product3SalesOrderItem3SalesOrderItem3" ToRole="ToRole_Product3SalesOrderItem3SalesOrderItem3"/>
+                <NavigationProperty Name="Supplier3" Relationship="1ba0ab511524c9fc15688698.Product3Supplier3Supplier3" FromRole="FromRole_Product3Supplier3Supplier3" ToRole="ToRole_Product3Supplier3Supplier3"/>
+            </EntityType>
+            <Association Name="Product3SalesOrderItem3SalesOrderItem3">
+                <End Type="1ba0ab511524c9fc15688698.Product3" Multiplicity="1" Role="FromRole_Product3SalesOrderItem3SalesOrderItem3"/>
+                <End Type="1ba0ab511524c9fc15688698.SalesOrderItem3" Multiplicity="*" Role="ToRole_Product3SalesOrderItem3SalesOrderItem3"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_Product3SalesOrderItem3SalesOrderItem3">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_Product3SalesOrderItem3SalesOrderItem3">
+                        <PropertyRef Name="___FK_5cae7f76498f3b301579c2bf_00031"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="Product3Supplier3Supplier3">
+                <End Type="1ba0ab511524c9fc15688698.Product3" Multiplicity="1" Role="FromRole_Product3Supplier3Supplier3"/>
+                <End Type="1ba0ab511524c9fc15688698.Supplier3" Multiplicity="1" Role="ToRole_Product3Supplier3Supplier3"/>
+                <ReferentialConstraint>
+                    <Principal Role="ToRole_Product3Supplier3Supplier3">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="FromRole_Product3Supplier3Supplier3">
+                        <PropertyRef Name="___FK_5cae7f76498f3b301579c2bf_00033"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityType Name="Supplier3">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Name" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Name"/>
+                <Property Name="Email" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Email"/>
+                <Property Name="Phone" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Phone"/>
+                <Property Name="City" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="City"/>
+            </EntityType>
+            <EntityType Name="SalesOrderItemGraph">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Quantity" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Quantity"/>
+                <Property Name="ProductName" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ProductName"/>
+                <Property Name="ProductPrice" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ProductPrice"/>
+                <Property Name="TotalPrice" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="TotalPrice"/>
+                <Property Name="Currency" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Currency"/>
+            </EntityType>
+            <EntityType Name="OrdenesMontoFecha">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="PO" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="PO"/>
+                <Property Name="Price" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Price"/>
+                <Property Name="Date" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date" sap:label="Date"/>
+            </EntityType>
+            <EntityType Name="ProveedorMonto2">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Proveeodr" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Proveeodr"/>
+                <Property Name="Price" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Price"/>
+                <Property Name="Rango" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Rango"/>
+            </EntityType>
+            <EntityType Name="ProductoMonto2">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Producto" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Producto"/>
+                <Property Name="Monto" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Monto"/>
+                <Property Name="Rango" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Rango"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

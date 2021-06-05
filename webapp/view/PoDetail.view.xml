@@ -1,0 +1,125 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.prototipo.controller.PoDetail" xmlns="sap.m" xmlns:layout="sap.ui.commons.layout">
+    <Page showHeader="false" title="Page Title" showFooter="true" showNavButton="true" enableScrolling="false">
+        <content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="1px" top="4px">
+                        <layout:control>
+                            <Image src="/webapp/resources/PO_2_.jpg" height="1024px" width="822.78px" visible="true" densityAware="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="641px" top="143px">
+                        <layout:control>
+                            <StandardListItem title="{ID}" description="" info="" infoState="None" type="Active" selected="false" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="0px" top="586px">
+                        <layout:control>
+                            <Table width="760px" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" class="sapUiResponsiveMargin" items="{path:'SalesOrderItem', templateShareable:true}">
+                                <infoToolbar>
+                                    <Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                                        <content>
+                                            <Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                        </content>
+                                    </Toolbar>
+                                </infoToolbar>
+                                <headerToolbar>
+                                    <OverflowToolbar width="auto" height="auto" design="Transparent" visible="true" enabled="true">
+                                        <content>
+                                            <Title text="{ID}" titleStyle="Auto" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                                            <ToolbarSpacer width=""/>
+                                            <OverflowToolbarButton text="Sort" type="Transparent" icon="sap-icon://sort" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                            <OverflowToolbarButton text="Filter" type="Transparent" icon="sap-icon://filter" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                            <OverflowToolbarButton text="Group" type="Transparent" icon="sap-icon://group-2" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                            <OverflowToolbarButton text="Settings" type="Transparent" icon="sap-icon://action-settings" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                        </content>
+                                    </OverflowToolbar>
+                                </headerToolbar>
+                                <columns>
+                                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+                                        <header/>
+                                        <footer/>
+                                    </Column>
+                                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                        <header/>
+                                        <footer/>
+                                    </Column>
+                                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                        <header/>
+                                        <footer/>
+                                    </Column>
+                                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                        <header/>
+                                        <footer/>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem type="Active">
+                                        <cells>
+                                            <ObjectIdentifier title="{ProductName}" text="" titleActive="false" visible="true"/>
+                                            <Text text="{path: 'Quantity', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                            <ObjectNumber number="{path: 'ProductPrice', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" unit="{Currency}" emphasized="true" state="None"/>
+                                            <ObjectNumber number="{path: 'TotalPrice', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" unit="{Currency}" emphasized="true" state="None"/>
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="90px" top="314px">
+                        <layout:control>
+                            <StandardListItem title="{Supplier/Name}" description="" info="" infoState="None" type="Active" selected="false" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="91px" top="346px">
+                        <layout:control>
+                            <StandardListItem title="{Supplier/Email}" description="" info="" infoState="None" type="Active" selected="false" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="92px" top="376px">
+                        <layout:control>
+                            <StandardListItem title="{Supplier/Phone}" description="" info="" infoState="None" type="Active" selected="false" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="85px" top="488px">
+                        <layout:control>
+                            <StandardListItem title="" description="" info="{path: 'DeliveryDate', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}" infoState="None" type="Active" selected="false" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="348px" top="489px">
+                        <layout:control>
+                            <StandardListItem title="" description="" info="{ShippingMethod}" infoState="None" type="Active" selected="false" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="630px" top="488px">
+                        <layout:control>
+                            <StandardListItem title="" description="" info="{path: 'PaymentTerms', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" infoState="None" type="Active" selected="false" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="640px" top="181px">
+                        <layout:control>
+                            <StandardListItem title="{path: 'PurchaseDate', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}" description="" info="" infoState="None" type="Active" selected="false" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="0px" top="0px">
+                        <layout:control>
+                            <Button text="&lt;" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+                <content>
+                    <ToolbarSpacer width=""/>
+                    <Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

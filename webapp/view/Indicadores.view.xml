@@ -1,0 +1,178 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.prototipo.controller.Indicadores" xmlns="sap.m" xmlns:chart="sap.chart" xmlns:data="sap.chart.data" xmlns:layout="sap.ui.commons.layout">
+    <Page showHeader="false" title="Page Title" showFooter="false" showNavButton="false" enableScrolling="false">
+        <content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="0px" top="0px">
+                        <layout:control>
+                            <Image src="/webapp/resources/titulo_bi.png" height="195.29px" width="1280px" visible="true" densityAware="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="1180px" top="189px">
+                        <layout:control>
+                            <Button text="Home" type="Default" icon="sap-icon://home" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="12px" top="796px">
+                        <layout:control>
+                            <chart:Chart id="sap_m_Page_0-content-sap_chart_PieChart-1622172126925-z8097sfvlcnikld6tqeaep2n19_S19" width="519.00000000px" height="366.97918701171875px" visibleDimensions="__metadata/uri" visibleMeasures="Price" vizProperties="{staticDataModel>/sap_m_Page_0-content-sap_chart_PieChart-1622172126925-z8097sfvlcnikld6tqeaep2n19_S19/vizProperties}" chartType="pie" selectionMode="Single" uiConfig="{}">
+                                <chart:dimensions>
+                                    <data:Dimension name="__metadata/uri" label="Proveedor" role="category" textProperty="Proveeodr"/>
+                                </chart:dimensions>
+                                <chart:measures>
+                                    <data:Measure name="Price" label="Profit" role="axis2"/>
+                                </chart:measures>
+                            </chart:Chart>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="581px" top="789px">
+                        <layout:control>
+                            <chart:Chart id="sap_m_Page_0-z8097sfvlcnikld6tqeaep2n19_S19-content-sap_chart_PieChart-1622725907569" width="519.00000000px" height="366.97918701171875px" visibleDimensions="__metadata/uri" visibleMeasures="Price" vizProperties="{staticDataModel>/sap_m_Page_0-z8097sfvlcnikld6tqeaep2n19_S19-content-sap_chart_PieChart-1622725907569/vizProperties}" chartType="pie" selectionMode="Single" uiConfig="{}">
+                                <chart:dimensions>
+                                    <data:Dimension name="__metadata/uri" label="Proveedor" role="category" textProperty="Proveeodr"/>
+                                </chart:dimensions>
+                                <chart:measures>
+                                    <data:Measure name="Price" label="Profit" role="axis2"/>
+                                </chart:measures>
+                            </chart:Chart>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="304px" top="1118px">
+                        <layout:control>
+                            <chart:Chart id="sap_m_Page_0-z8097sfvlcnikld6tqeaep2n19_S19-content-sap_chart_PieChart-1622725949652" width="519.00000000px" height="366.97918701171875px" visibleDimensions="__metadata/uri" visibleMeasures="Price" vizProperties="{staticDataModel>/sap_m_Page_0-z8097sfvlcnikld6tqeaep2n19_S19-content-sap_chart_PieChart-1622725949652/vizProperties}" chartType="pie" selectionMode="Single" uiConfig="{}">
+                                <chart:dimensions>
+                                    <data:Dimension name="__metadata/uri" label="Proveedor" role="category" textProperty="Proveeodr"/>
+                                </chart:dimensions>
+                                <chart:measures>
+                                    <data:Measure name="Price" label="Profit" role="axis2"/>
+                                </chart:measures>
+                            </chart:Chart>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="154px" top="222px">
+                        <layout:control>
+                            <chart:Chart id="sap_m_Page_0-content-sap_chart_LineChart-1621566177179-z8097sfvlcnikld6tqeaep2n19_S19" width="983.09375px" height="519.546875px" visibleDimensions="__metadata/uri" visibleMeasures="Price" vizProperties="{staticDataModel>/sap_m_Page_0-content-sap_chart_LineChart-1621566177179-z8097sfvlcnikld6tqeaep2n19_S19/vizProperties}" chartType="line" selectionMode="Single" uiConfig="{}">
+                                <chart:dimensions>
+                                    <data:Dimension name="__metadata/uri" label="Purchase Date" role="category" textProperty="Date"/>
+                                </chart:dimensions>
+                                <chart:measures>
+                                    <data:Measure name="Price" label="Total Price" role="axis2"/>
+                                </chart:measures>
+                            </chart:Chart>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="150px" top="807px">
+                        <layout:control>
+                            <Title text="Proveedores Vs  Monto" titleStyle="H4" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="180px" top="844px">
+                        <layout:control>
+                            <Title text="Últimos 12 Meses" titleStyle="H4" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="710px" top="799px">
+                        <layout:control>
+                            <Title text="Proveedores Vs  Monto" titleStyle="H4" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="740px" top="836px">
+                        <layout:control>
+                            <Title text="Últimos 6 Meses" titleStyle="H4" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="526px" top="1506px">
+                        <layout:control>
+                            <Title text="Productos Vs  Monto" titleStyle="H4" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="437px" top="1117px">
+                        <layout:control>
+                            <Title text="Proveedores Vs  Monto" titleStyle="H4" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="556px" top="1543px">
+                        <layout:control>
+                            <Title text="Últimos 12 Meses" titleStyle="H4" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="564px" top="2042px">
+                        <layout:control>
+                            <Title text="Productos Vs  Monto" titleStyle="H4" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="467px" top="1154px">
+                        <layout:control>
+                            <Title text="Últimos 3 Meses" titleStyle="H4" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="601px" top="2582px">
+                        <layout:control>
+                            <Title text="Últimos 3 Meses" titleStyle="H4" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="583px" top="2078px">
+                        <layout:control>
+                            <Title text="Últimos 6 Meses" titleStyle="H4" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="577px" top="2551px">
+                        <layout:control>
+                            <Title text="Productos Vs  Monto" titleStyle="H4" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="33px" top="1572px">
+                        <layout:control>
+                            <chart:Chart id="sap_m_Page_0-z8097sfvlcnikld6tqeaep2n19_S19-content-sap_chart_BarChart-1622727314953" width="100%" height="450px" visibleDimensions="__metadata/uri" visibleMeasures="Monto" vizProperties="{staticDataModel>/sap_m_Page_0-z8097sfvlcnikld6tqeaep2n19_S19-content-sap_chart_BarChart-1622727314953/vizProperties}" chartType="bar" selectionMode="Single" uiConfig="{}">
+                                <chart:dimensions>
+                                    <data:Dimension name="__metadata/uri" label="Producto" role="category" textProperty="Producto"/>
+                                </chart:dimensions>
+                                <chart:measures>
+                                    <data:Measure name="Monto" label="Monto" role="axis2"/>
+                                </chart:measures>
+                            </chart:Chart>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="64px" top="2082px">
+                        <layout:control>
+                            <chart:Chart id="sap_m_Page_0-z8097sfvlcnikld6tqeaep2n19_S19-content-sap_chart_BarChart-1622727501151" width="100%" height="450px" visibleDimensions="__metadata/uri" visibleMeasures="Monto" vizProperties="{staticDataModel>/sap_m_Page_0-z8097sfvlcnikld6tqeaep2n19_S19-content-sap_chart_BarChart-1622727501151/vizProperties}" chartType="bar" selectionMode="Single" uiConfig="{}">
+                                <chart:dimensions>
+                                    <data:Dimension name="__metadata/uri" label="Producto" role="category" textProperty="Producto"/>
+                                </chart:dimensions>
+                                <chart:measures>
+                                    <data:Measure name="Monto" label="Monto" role="axis2"/>
+                                </chart:measures>
+                            </chart:Chart>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="96px" top="2615px">
+                        <layout:control>
+                            <chart:Chart id="sap_m_Page_0-z8097sfvlcnikld6tqeaep2n19_S19-content-sap_chart_BarChart-1622727552263" width="100%" height="450px" visibleDimensions="__metadata/uri" visibleMeasures="Monto" vizProperties="{staticDataModel>/sap_m_Page_0-z8097sfvlcnikld6tqeaep2n19_S19-content-sap_chart_BarChart-1622727552263/vizProperties}" chartType="bar" selectionMode="Single" uiConfig="{}">
+                                <chart:dimensions>
+                                    <data:Dimension name="__metadata/uri" label="Producto" role="category" textProperty="Producto"/>
+                                </chart:dimensions>
+                                <chart:measures>
+                                    <data:Measure name="Monto" label="Monto" role="axis2"/>
+                                </chart:measures>
+                            </chart:Chart>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+                <content>
+                    <ToolbarSpacer width=""/>
+                    <Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+        <headerContent>
+            <Button text="Button" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+        </headerContent>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

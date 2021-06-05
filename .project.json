@@ -1,0 +1,43 @@
+{
+    "dataBinding": {
+        "/webapp/view/MainMenu.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/OrdersList.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/PoDetail.view.xml": {
+            "entitySet": "/SalesOrderSet"
+        }, 
+        "/webapp/view/CreateOrder.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/OrderList2.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/PoDetail2.view.xml": {
+            "entitySet": "/SalesOrder2Set"
+        }, 
+        "/webapp/view/OrderList3.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/CreateOrder3.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/PoDetail3_1.view.xml": {
+            "entitySet": "/SalesOrder3Set"
+        }, 
+        "/webapp/view/Indicadores.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Dialog2.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Dialog1.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Popover1.view.xml": {
+            "entitySet": ""
+        } 
+    }
+}

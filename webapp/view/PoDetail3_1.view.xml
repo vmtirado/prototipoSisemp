@@ -1,0 +1,133 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.prototipo.controller.PoDetail3_1" xmlns="sap.m" xmlns:layout="sap.ui.commons.layout">
+    <Page showHeader="false" title="Page Title" showFooter="false" showNavButton="false" enableScrolling="false">
+        <content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="0px" top="0px">
+                        <layout:control>
+                            <Image src="/webapp/resources/PO_2_.jpg" height="1047px" width="841.25px" visible="true" densityAware="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="637px" top="137px">
+                        <layout:control>
+                            <StandardListItem title="{ID}" description="" info="" infoState="None" type="Active" selected="false" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="636px" top="186px">
+                        <layout:control>
+                            <StandardListItem title="{path: 'PurchaseDate', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}" description="" info="" infoState="None" type="Active" selected="false" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="81px" top="497px">
+                        <layout:control>
+                            <StandardListItem title="{path: 'DeliveryDate', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}" description="" info="" infoState="None" type="Active" selected="false" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="344px" top="494px">
+                        <layout:control>
+                            <StandardListItem title="{ShippingMethod}" description="" info="" infoState="None" type="Active" selected="false" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="594px" top="493px">
+                        <layout:control>
+                            <StandardListItem title="{path: 'PaymentTerms', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" description="" info="" infoState="None" type="Active" selected="false" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="83px" top="307px">
+                        <layout:control>
+                            <StandardListItem title="{Supplier3/Name}" description="" info="" infoState="None" type="Active" selected="false" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="81px" top="351px">
+                        <layout:control>
+                            <StandardListItem title="{Supplier3/Email}" description="" info="" infoState="None" type="Active" selected="false" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="80px" top="400px">
+                        <layout:control>
+                            <StandardListItem title="{Supplier3/Phone}" description="" info="" infoState="None" type="Active" selected="false" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="0px" top="599px">
+                        <layout:control>
+                            <Table width="780px" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" class="sapUiResponsiveMargin" items="{path:'SalesOrderItem3', templateShareable:true}">
+                                <infoToolbar>
+                                    <Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                                        <content>
+                                            <Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                        </content>
+                                    </Toolbar>
+                                </infoToolbar>
+                                <headerToolbar>
+                                    <OverflowToolbar width="auto" height="auto" design="Transparent" visible="true" enabled="true">
+                                        <content>
+                                            <Title text="Items (3)" titleStyle="Auto" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                                            <ToolbarSpacer width=""/>
+                                            <OverflowToolbarButton text="Sort" type="Transparent" icon="sap-icon://sort" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                            <OverflowToolbarButton text="Filter" type="Transparent" icon="sap-icon://filter" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                            <OverflowToolbarButton text="Group" type="Transparent" icon="sap-icon://group-2" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                            <OverflowToolbarButton text="Settings" type="Transparent" icon="sap-icon://action-settings" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                        </content>
+                                    </OverflowToolbar>
+                                </headerToolbar>
+                                <columns>
+                                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+                                        <header>
+                                            <Text text="Quantity" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                        </header>
+                                        <footer/>
+                                    </Column>
+                                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                        <header>
+                                            <Text text="Product" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                        </header>
+                                        <footer/>
+                                    </Column>
+                                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                        <header>
+                                            <Text text="Price" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                        </header>
+                                        <footer/>
+                                    </Column>
+                                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                        <header>
+                                            <Text text="Total Price" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                        </header>
+                                        <footer/>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem type="Active">
+                                        <cells>
+                                            <ObjectIdentifier title="" text="{path: 'Quantity', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" titleActive="false" visible="true"/>
+                                            <Text text="{ProductName}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                            <ObjectNumber number="{path: 'ProductPrice', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" unit="{Currency}" emphasized="true" state="None"/>
+                                            <ObjectNumber number="{path: 'TotalPrice', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" unit="{Currency}" emphasized="true" state="None"/>
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="768px" top="9px">
+                        <layout:control>
+                            <Button text="Back" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+                <content>
+                    <ToolbarSpacer width=""/>
+                    <Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>
